@@ -12,7 +12,14 @@ settings =
 		supported = { "portrait" }
 	},
 	--]]
-
+	plugins =
+	{
+		["plugin.appIcon"] =
+		{
+			publisherId="tech.scotth",
+			marketplaceId = "insert marketplace account ID",
+		},
+	},
 	iphone =
 	{
 		xcassets = "Images.xcassets",
@@ -21,9 +28,9 @@ settings =
 			CFBundleIcons = {
 				CFBundleAlternateIcons={
 					alternateIcon={ -- name we call in code
-						CFBundleIconFiles={"altIcon"} -- icon1.png in root project
+						CFBundleIconFiles={"altIcon"}, -- altIcon.png in root project
+						UIPrerenderedIcon = false
 					},
-					UIPrerenderedIcon = false
 				},
 			},
 			UILaunchStoryboardName = "LaunchScreen",
