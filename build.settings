@@ -25,15 +25,8 @@ settings =
 		xcassets = "Images.xcassets",
 		plist =
 		{
-			CFBundleIcons = {
-				CFBundleAlternateIcons={
-					alternateIcon={ -- name we call in code
-						CFBundleIconFiles={"altIcon"}, -- altIcon.png in root project
-						UIPrerenderedIcon = false
-					},
-				},
-			},
 			UILaunchStoryboardName = "LaunchScreen",
 		},
+		alternateIcons={"test"}
 	},
 }

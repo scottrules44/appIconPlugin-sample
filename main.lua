@@ -2,7 +2,7 @@ local appIcon = require "plugin.appIcon"
 
 
 timer.performWithDelay( 1000, function()
-	appIcon.setIcon( "alternateIcon", function(e)
+	appIcon.setIcon( "test", function(e)
         if(e.isError)then
             print("Error Setting Icon:",e.error )
         else
@@ -10,4 +10,3 @@ timer.performWithDelay( 1000, function()
         end
     end )
 end )
-
